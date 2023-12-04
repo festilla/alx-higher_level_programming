@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-
-def find_maximum_value(input_list=[]):
-    if len(input_list) == 0:
-       return
-       maximum_value = input_list[0]
-       for i in range(1, len(input_list)):
-     if maximum_value < input_list[i]:
-       maximum_value = input_list[i]
-     else:
-       continue
-       return maximum_value
+def max_integer(my_list=[]):
+    if len(my_list) == 0:
+        return "None"
+    else:
+        max = my_list[0]
+        for i in range(len(my_list)):
+            if my_list[i] > max:
+                max = my_list[i]
+        return max
