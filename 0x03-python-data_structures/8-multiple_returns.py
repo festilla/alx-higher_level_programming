@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-
-def analyze_sentence(sentence):
-    result_data = ()
+def multiple_returns(sentence):
+    my_tuple = ()
     if len(sentence) == 0:
-       result_data = 0, "None"
+        my_tuple = 0, "None"
     else:
-       result_data = len(sentence), sentence[0]
-    return result_data
+        my_tuple = len(sentence), sentence[0]
+    return my_tuple
